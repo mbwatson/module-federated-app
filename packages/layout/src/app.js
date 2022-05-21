@@ -2,25 +2,28 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Header from './header'
 import Footer from './footer'
+import { StoreProvider } from 'shell/store'
 
 import './index.css'
 
 const App = () => (
-  <div className="container">
+  <StoreProvider>
+    <div className="container">
 
-    <hr />
+      <hr />
 
-    <h2>Header</h2>
-    <Header />
+      <h2>Header</h2>
+      <Header />
 
-    <hr />
+      <hr />
 
-    <h2>Footer</h2>
-    <Footer />
+      <h2>Footer</h2>
+      <Footer />
 
-    <hr />
+      <hr />
 
-  </div>
+    </div>
+  </StoreProvider>
 )
 
 ReactDOM.render(<App />, document.getElementById('app'))
