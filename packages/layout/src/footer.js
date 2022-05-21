@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <Container maxWidth="md">
-        Footer
+        &copy; { new Date().getFullYear() }
       </Container>
     </footer>
   )
