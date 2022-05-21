@@ -49,6 +49,7 @@ module.exports = {
       },
       exposes: {
         './store': './src/store',
+        './theme': './src/theme',
       },
       shared: {
         ...deps,
